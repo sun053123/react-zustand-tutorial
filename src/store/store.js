@@ -23,6 +23,11 @@ function countStore(set) {
         }),
         deleteTodo: (idTodo) => set((state) => {
             return {todos: state.todos.filter((todo) => todo.id !== idTodo)}
+        }),
+        setCompleteTodo: (idTodo) => set((state) => {
+            const todoObj = state.todos.find((todo) => todo.id === idTodo)
+            todoObj.isComplete = !todoObj.isComplete
+            return {toodos: [...state.todos, todoObj]}
         })
         // changePerson: (person) => set((state) => state.person = person),
     };
