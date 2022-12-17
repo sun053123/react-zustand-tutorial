@@ -6,6 +6,7 @@ import Blog from './pages/Blog'
 import Market from './pages/Market'
 import Navbar from './components/navbar/Navbar'
 import NoPage from './pages/NoPage'
+import XoGame from './pages/XoGame'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="todo" element={<Todo />} />
           <Route path="blog" element={<Blog />} />
           <Route path="market" element={<Market />} />
+          <Route path="xogame" element={<XoGame />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </>

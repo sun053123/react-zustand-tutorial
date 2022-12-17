@@ -29,7 +29,6 @@ function FormTodo() {
             return
         }
         // random id 
-        const id = 
         todoform.id = uuidv4()
         addTodo(todoform)
         setTodoform(() => ({
