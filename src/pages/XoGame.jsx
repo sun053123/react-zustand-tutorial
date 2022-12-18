@@ -16,7 +16,7 @@ function XoGame() {
     const [XplayerScore, setXplayerScore] = React.useState(0);
     const [OplayerScore, setOplayerScore] = React.useState(0);
 
-    const [togglePopup, setTogglePopup] = React.useState(true)
+    const [togglePopup, setTogglePopup] = React.useState(false)
 
     React.useEffect(() => {
         if(gamePhase){
